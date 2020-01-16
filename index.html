@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>1, 2 oder 3 Soundboard</title>
+	<script type="application/javascript">
+		var audio = null;
+		function playJingle() {
+			if (audio !== null) {
+				audio.pause();
+			}
+			audio = new Audio('jingle.mp3');
+			audio.play();
+		}
+	</script>
+	<style>
+		.btn {
+			background: #181869;
+			border: none;
+			border-radius: 10px;
+			padding: 40px 0;
+			color: wheat;
+			font-size: 30px;
+			width: 200px;
+			box-sizing: border-box;
+		}
+	</style>
+</head>
+<body>
+	<button onclick="playJingle()" class="btn">&#9654; Jingle</button>
+
+</body>
+</html>
